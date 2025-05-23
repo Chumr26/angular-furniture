@@ -4950,20 +4950,6 @@ nav[class*=menu] li[class*=current-menu-]>.ct-sub-menu-parent svg {
     font-size: 13px
 }
 
-[class*=header-menu] {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    min-width: 0
-}
-
-[class*=header-menu] .menu {
-    height: inherit
-}
-
-[class*=header-menu] .menu>li>.ct-menu-link {
-    white-space: nowrap
-}
 
 #search-modal {
     --vertical-alignment: initial
@@ -5334,14 +5320,7 @@ nav[class*=menu] li[class*=current-menu-]>.ct-sub-menu-parent svg {
     display: none
 }
 
-[data-sticky*=yes],
-[data-sticky*=fixed] {
-    position: fixed;
-    z-index: 5;
-    top: calc(var(--admin-bar, 0px) + var(--theme-frame-size, 0px) + var(--header-sticky-offset, 0px));
-    left: var(--theme-frame-size, 0px);
-    right: calc(var(--theme-frame-size, 0px) + var(--scrollbar-width, 0px))
-}
+
 
 [data-sticky*=slide][data-sticky*=yes-start] {
     transform: translateY(-100%)
