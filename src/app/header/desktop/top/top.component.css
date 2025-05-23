@@ -1,0 +1,24 @@
+
+[data-row*="top"] {
+    --height: 40px;
+    background-color: var(--theme-palette-color-4);
+    background-image: none;
+    --theme-border-top: none;
+    --theme-border-bottom: none;
+    --theme-box-shadow: none;
+    z-index: 3
+}
+
+[data-row*="top"]>div {
+    --theme-border-top: none;
+    --theme-border-bottom: none;
+}
+
+[data-id="menu-tertiary"]>ul>li>a {
+    --theme-font-weight: 400;
+    --theme-text-transform: capitalize;
+    --theme-font-size: 13px;
+    --theme-line-height: 1.3;
+    --theme-link-initial-color: rgba(228, 238, 240, 0.58);
+    --theme-link-hover-color: #ffffff;
+}
