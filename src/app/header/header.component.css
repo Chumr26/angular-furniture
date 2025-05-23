@@ -1,0 +1,139 @@
+[data-header*="type-1"] [data-id="cart"] .ct-cart-item {
+    --theme-icon-color: var(--theme-text-color);
+}
+
+[data-header*="type-1"] .ct-header [data-row*="middle"]>div {
+    --theme-border-top: none;
+    --theme-border-bottom: none;
+}
+
+[data-header*="type-1"] .ct-header-wishlist .ct-label {
+    --theme-font-weight: 600;
+    --theme-text-transform: uppercase;
+    --theme-font-size: 12px;
+}
+
+[data-label=left] .ct-label {
+    margin-inline-end: .7em
+}
+
+#header {
+    position: relative;
+    z-index: 50
+}
+
+#header [data-row*=middle] {
+    z-index: 2
+}
+
+#header [data-column] {
+    min-height: inherit
+}
+
+#header [data-column=start],
+#header [data-column=end] {
+    min-width: 0
+}
+
+.ct-header-cart,
+.ct-header-account,
+.ct-language-switcher[data-type=dropdown] {
+    position: relative
+}
+
+[data-sticky],
+[data-sticky] [data-row],
+[data-sticky] [data-row*=boxed]>div {
+    transition: box-shadow var(--header-sticky-animation-speed, 0.2s) cubic-bezier(0.455, 0.03, 0.515, 0.955), background-color var(--header-sticky-animation-speed, 0.2s) cubic-bezier(0.455, 0.03, 0.515, 0.955), -webkit-backdrop-filter var(--header-sticky-animation-speed, 0.2s) cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: box-shadow var(--header-sticky-animation-speed, 0.2s) cubic-bezier(0.455, 0.03, 0.515, 0.955), backdrop-filter var(--header-sticky-animation-speed, 0.2s) cubic-bezier(0.455, 0.03, 0.515, 0.955), background-color var(--header-sticky-animation-speed, 0.2s) cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: box-shadow var(--header-sticky-animation-speed, 0.2s) cubic-bezier(0.455, 0.03, 0.515, 0.955), backdrop-filter var(--header-sticky-animation-speed, 0.2s) cubic-bezier(0.455, 0.03, 0.515, 0.955), background-color var(--header-sticky-animation-speed, 0.2s) cubic-bezier(0.455, 0.03, 0.515, 0.955), -webkit-backdrop-filter var(--header-sticky-animation-speed, 0.2s) cubic-bezier(0.455, 0.03, 0.515, 0.955)
+}
+
+[data-header*="type-1"] .ct-header [data-id="logo"] .site-logo-container {
+    --logo-max-height: 26px;
+}
+
+[data-header*="type-1"] [data-id="cart"] {
+    --margin: 0px 0px 0px 25px !important;
+}
+
+[data-header*="type-1"] [data-id="wish-list"] {
+    --margin: 0px 0px 0px 25px !important;
+}
+
+[data-header*="type-1"] .ct-header [data-row*="middle"] {
+    --height: 100px;
+    background-color: var(--theme-palette-color-8);
+    background-image: none;
+    --theme-border-top: none;
+    --theme-border-bottom: none;
+    --theme-box-shadow: none;
+}
+
+#header [data-row] {
+    position: var(--position, relative);
+    box-shadow: var(--theme-box-shadow);
+    border-top: var(--theme-border-top);
+    border-bottom: var(--theme-border-bottom);
+    -webkit-backdrop-filter: blur(var(--theme-backdrop-blur));
+    backdrop-filter: blur(var(--theme-backdrop-blur))
+}
+
+#header [data-row]>div {
+    min-height: var(--shrink-height, var(--height));
+    border-top: var(--theme-border-top);
+    border-bottom: var(--theme-border-bottom)
+}
+
+#header [data-items] {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    width: 100%
+}
+
+#header [data-items]>* {
+    margin: var(--margin, 0 10px)
+}
+
+#header [data-column-set="2"]>div {
+    display: grid;
+    grid-template-columns: auto auto
+}
+
+[data-placements] {
+    display: grid
+}
+
+[data-column=end]>[data-items=primary] {
+    justify-content: flex-end
+}
+
+.site-branding {
+    display: flex;
+    text-align: var(--horizontal-alignment)
+}
+
+.site-branding:not([data-logo=top]) {
+    align-items: center
+}
+
+[class*=ct-dynamic-count] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    top: -9px;
+    inset-inline-end: -9px;
+    min-width: 16px;
+    cursor: pointer;
+    height: 16px;
+    padding: 0 3px;
+    font-size: 10px;
+    font-weight: 600;
+    font-style: normal;
+    border-radius: 10px;
+    color: var(--theme-cart-badge-text, #fff);
+    background: var(--theme-cart-badge-background, var(--theme-palette-color-1))
+}
