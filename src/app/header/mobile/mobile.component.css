@@ -1,0 +1,48 @@
+[data-header*="type-1"] [data-id="trigger"] {
+    --margin: 0px 0px 0px 25px !important;
+    --theme-icon-size: 18px;
+}
+
+[data-label=right] .ct-label {
+    order: 2;
+    margin-inline-start: .7em
+}
+
+.ct-color-switch,
+.ct-header-search,
+.ct-header-trigger {
+    --theme-link-initial-color: var(--theme-text-color)
+}
+
+.ct-color-switch .ct-label,
+.ct-header-search .ct-label,
+.ct-header-trigger .ct-label {
+    transition: inherit;
+    color: var(--theme-link-initial-color)
+}
+
+.ct-header-trigger .ct-icon {
+    transition: none
+}
+
+.ct-header-trigger .ct-icon rect {
+    transform-origin: 50% 50%;
+    transition: all .12s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+}
+
+.ct-header-trigger .ct-icon[data-type=type-2] rect:nth-child(1) {
+    width: 10px
+}
+
+.ct-header-trigger .ct-icon[data-type=type-2] rect:nth-child(3) {
+    width: 15px
+}
+
+.ct-header-trigger .ct-icon[data-type=type-3] rect:nth-child(1),
+.ct-header-trigger .ct-icon[data-type=type-3] rect:nth-child(3) {
+    width: 12px
+}
+
+.ct-header-trigger .ct-icon[data-type=type-3] rect:nth-child(1) {
+    x: 6px
+}
